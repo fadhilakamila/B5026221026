@@ -1,0 +1,752 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    color: #444444;
+  }
+
+  a {
+    color: black;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: black;
+    text-decoration: none;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Raleway", sans-serif;
+  }
+
+  /*--------------------------------------------------------------
+  # Back to top button
+  --------------------------------------------------------------*/
+  .back-to-top {
+    position: fixed;
+    visibility: hidden;
+    opacity: 0;
+    right: 15px;
+    bottom: 15px;
+    z-index: 996;
+    background: #b8241c;
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    transition: all 0.4s;
+  }
+
+  .back-to-top i {
+    font-size: 28px;
+    color: #fff;
+    line-height: 0;
+  }
+
+  .back-to-top:hover {
+    background: black;
+    color: #fff;
+  }
+
+  .back-to-top.active {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  /*--------------------------------------------------------------
+  # Disable AOS delay on mobile
+  --------------------------------------------------------------*/
+  @media screen and (max-width: 768px) {
+    [data-aos-delay] {
+      transition-delay: 0 !important;
+    }
+  }
+
+  /*--------------------------------------------------------------
+  # Header
+  --------------------------------------------------------------*/
+  #header {
+    z-index: 997;
+    transition: all 0.5s;
+    padding: 22px 0;
+    background: #fff;
+  }
+
+  #header.header-scrolled {
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    padding: 12px 0;
+  }
+
+  #header .logo h1 {
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+
+  #header .logo h1 a,
+  #header .logo h1 a:hover {
+    color: #222222;
+    text-decoration: none;
+  }
+
+  #header .logo img {
+    padding: 0;
+    margin: 0;
+    max-height: 40px;
+  }
+
+  /*--------------------------------------------------------------
+  # Navigation Menu
+  --------------------------------------------------------------*/
+  /**
+  * Desktop Navigation
+  */
+  .navbar {
+    padding: 0;
+  }
+
+  .navbar ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    align-items: center;
+  }
+
+  .navbar li {
+    position: relative;
+  }
+
+  .navbar a,
+  .navbar a:focus {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0 10px 30px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #555555;
+    white-space: nowrap;
+    transition: 0.3s;
+  }
+
+  .navbar a i,
+  .navbar a:focus i {
+    font-size: 12px;
+    line-height: 0;
+    margin-left: 5px;
+  }
+
+  .navbar a:hover,
+  .navbar .active,
+  .navbar .active:focus,
+  .navbar li:hover>a {
+    color: #b8241c;
+  }
+
+  .navbar .mulai,
+  .navbar .mulai:focus {
+    background: #b8241c;
+    padding: 8px 25px;
+    margin-left: 30px;
+    border-radius: 50px;
+    color: #fff;
+  }
+
+  .navbar .mulai:hover,
+  .navbar .mulai:focus:hover {
+    color: #b8241c;;
+    background: #e2e2e2;
+  }
+
+  /**
+  * Mobile Navigation
+  */
+
+  .navbar-mobile {
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(9, 9, 9, 0.9);
+    transition: 0.3s;
+    z-index: 999;
+  }
+
+  .navbar-mobile .mobile-nav-toggle {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+  }
+
+  .navbar-mobile ul {
+    display: block;
+    position: absolute;
+    top: 55px;
+    right: 15px;
+    bottom: 15px;
+    left: 15px;
+    padding: 10px 0;
+    border-radius: 8px;
+    background-color: #fff;
+    overflow-y: auto;
+    transition: 0.3s;
+  }
+
+  .navbar-mobile a,
+  .navbar-mobile a:focus {
+    padding: 10px 20px;
+    font-size: 15px;
+    color: #222222;
+  }
+
+  .navbar-mobile a:hover,
+  .navbar-mobile .active,
+  .navbar-mobile li:hover>a {
+    color: black;
+  }
+
+  .navbar-mobile .mulai,
+  .navbar-mobile .mulai:focus {
+    margin: 15px;
+  }
+
+  /*--------------------------------------------------------------
+  # Hero Section
+  --------------------------------------------------------------*/
+  #hero {
+    width: 100%;
+    height: 70vh;
+    margin-top: 70px;
+  }
+
+  #hero h1 {
+    margin: 0 0 10px 0;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+    color: black;
+  }
+
+  #hero h2 {
+    color: #484848;
+    margin-bottom: 50px;
+    font-size: 24px;
+  }
+
+  #hero .btn-mulai {
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 50px;
+    transition: 0.5s;
+    color: #b8241c;
+    border: 2px solid #b8241c;
+  }
+
+  #hero .btn-mulai:hover {
+    background: #b8241c;
+    color: #fff;
+  }
+
+  #hero .animated {
+    animation: up-down 2s ease-in-out infinite alternate-reverse both;
+  }
+
+  @media (min-width: 1024px) {
+    #hero {
+      background-attachment: fixed;
+    }
+  }
+
+  @media (max-width: 991px) {
+    #hero {
+      height: 100vh;
+    }
+
+    #hero .animated {
+      animation: none;
+    }
+
+    #hero .hero-img {
+      text-align: center;
+    }
+
+    #hero .hero-img img {
+      width: 50%;
+    }
+  }
+
+  @media (max-width: 768px) {
+    #hero {
+      margin-top: 20px;
+    }
+
+    #hero h1 {
+      font-size: 28px;
+      line-height: 36px;
+    }
+
+    #hero h2 {
+      font-size: 18px;
+      line-height: 24px;
+      margin-bottom: 30px;
+    }
+
+    #hero .hero-img img {
+      width: 70%;
+    }
+  }
+
+  @media (max-width: 575px) {
+    #hero .hero-img img {
+      width: 80%;
+    }
+  }
+
+  @keyframes up-down {
+    0% {
+      transform: translateY(10px);
+    }
+
+    100% {
+      transform: translateY(-10px);
+    }
+  }
+
+  /*--------------------------------------------------------------
+  # Sections General
+  --------------------------------------------------------------*/
+  section {
+    padding: 60px 0;
+    overflow: hidden;
+  }
+
+  .section-bg {
+    background-color: #f7fbfe;
+  }
+
+  .section-title {
+    text-align: center;
+    padding-bottom: 30px;
+  }
+
+  .section-title h2 {
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+    color: #222222;
+  }
+
+  .section-title h2::before,
+  .section-title h2::after {
+    content: "";
+    width: 50px;
+    height: 2px;
+    background: #b8241c;
+    display: inline-block;
+  }
+
+  .section-title h2::before {
+    margin: 0 15px 10px 0;
+  }
+
+  .section-title h2::after {
+    margin: 0 0 10px 15px;
+  }
+
+  .section-title p {
+    margin: 15px 0 0 0;
+  }
+
+  /*--------------------------------------------------------------
+  # Tentang KPI
+  --------------------------------------------------------------*/
+  .about .content h3 {
+    font-weight: 600;
+    font-size: 26px;
+  }
+
+  .about .content ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .about .content ul li {
+    padding-left: 28px;
+    position: relative;
+  }
+
+  .about .content ul li+li {
+    margin-top: 10px;
+  }
+
+  .about .content ul i {
+    position: absolute;
+    left: 0;
+    top: 2px;
+    font-size: 20px;
+    color: #b8241c;
+    line-height: 1;
+  }
+
+  .about .content p:last-child {
+    margin-bottom: 0;
+  }
+
+  .about .content .btn-learn-more {
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 12px 32px;
+    border-radius: 50px;
+    transition: 0.3s;
+    line-height: 1;
+    color: #b8241c;
+    animation-delay: 0.8s;
+    margin-top: 6px;
+    border: 2px solid #b8241c;
+  }
+
+  .about .content .btn-learn-more:hover {
+    background: #b8241c;
+    color: #fff;
+    text-decoration: none;
+  }
+
+  /*--------------------------------------------------------------
+  # Layanan Aplikasi
+  --------------------------------------------------------------*/
+  .layanan-aplikasi .icon-box {
+    padding: 30px;
+    position: relative;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.12);
+    transition: all 0.3s ease-in-out;
+    border-radius: 8px;
+    z-index: 1;
+  }
+
+  .layanan-aplikasi .icon-box::before {
+    content: "";
+    position: absolute;
+    background: rgb(226, 226, 226);
+    right: -60px;
+    top: -40px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    transition: all 0.3s;
+    z-index: -1;
+  }
+
+  .layanan-aplikasi .icon-box:hover::before {
+    background: #b8241c;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 0px;
+  }
+
+  .layanan-aplikasi .icon {
+    margin: 0 auto 20px auto;
+    padding-top: 10px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    background: #b8241c;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .layanan-aplikasi .icon i {
+    font-size: 36px;
+    line-height: 1;
+    color: #fff;
+  }
+
+  .layanan-aplikasi .title {
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-size: 18px;
+  }
+
+  .layanan-aplikasi .title a {
+    color: #111;
+  }
+
+  .layanan-aplikasi .description {
+    font-size: 15px;
+    line-height: 28px;
+    margin-bottom: 0;
+  }
+
+  .layanan-aplikasi .icon-box:hover .title a,
+  .layanan-aplikasi .icon-box:hover .description {
+    color: #fff;
+  }
+
+  .layanan-aplikasi .icon-box:hover .icon {
+    background: #fff;
+  }
+
+  .layanan-aplikasi .icon-box:hover .icon i {
+    color: #b8241c;
+  }
+
+  /*--------------------------------------------------------------
+  # Kajian Kami
+  --------------------------------------------------------------*/
+  .kajian-kami {
+    padding-top: 20px;
+  }
+  .kajian-kami .card {
+
+    border: 0;
+    padding: 160px 20px 20px 20px;
+    position: relative;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  .kajian-kami .card-body {
+    z-index: 10;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 15px 30px;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+    transition: ease-in-out 0.4s;
+    border-radius: 5px;
+  }
+
+  .kajian-kami .card-title {
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .kajian-kami .card-title a {
+    color: #222222;
+  }
+
+  .kajian-kami .card-text {
+    color: #5e5e5e;
+  }
+
+  .kajian-kami .read-more a {
+    color: #777777;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 12px;
+    transition: 0.4s;
+  }
+
+  .kajian-kami .read-more a:hover {
+    text-decoration: underline;
+  }
+
+  .kajian-kami .card:hover .card-body {
+    background: #b8241c;
+  }
+
+  .kajian-kami .card:hover .read-more a,
+  .kajian-kami .card:hover .card-title,
+  .kajian-kami .card:hover .card-title a,
+  .kajian-kami .card:hover .card-text {
+    color: #fff;
+  }
+
+  /*--------------------------------------------------------------
+  # Regulasi
+  --------------------------------------------------------------*/
+  .regulasi .icon-box {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background: #f6f6f6;
+    transition: ease-in-out 0.3s;
+    border-radius: 5px;
+  }
+
+  .regulasi .icon-box i {
+    font-size: 32px;
+    padding-right: 10px;
+    line-height: 1;
+  }
+
+  .regulasi .icon-box h3 {
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    font-size: 16px;
+  }
+
+  .regulasi .icon-box h3 a {
+    color: #222222;
+    transition: ease-in-out 0.3s;
+  }
+
+  .regulasi .icon-box h3 a:hover {
+    color: #b8241c;
+  }
+
+  .regulasi .icon-box:hover {
+    background: #e3e2e2;
+  }
+
+  /*--------------------------------------------------------------
+  # Kontak
+  --------------------------------------------------------------*/
+  .kontak .kontak-about h3 {
+    font-size: 28px;
+    margin: 0 0 10px 0;
+    padding: 0;
+    line-height: 1;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #222222;
+  }
+
+  .kontak .kontak-about p {
+    font-size: 14px;
+    line-height: 24px;
+    font-family: "Raleway", sans-serif;
+    color: #888;
+  }
+
+  .kontak .social-links {
+    padding-bottom: 20px;
+  }
+
+  .kontak .social-links a {
+    font-size: 18px;
+    display: inline-block;
+    background: #fff;
+    color: #b8241c;
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 50%;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
+    border: 1px solid #b8241c;
+  }
+
+  .kontak .social-links a:hover {
+    background: #b8241c;
+    color: #fff;
+  }
+
+  .kontak .info {
+    color: #444444;
+  }
+
+  .kontak .info i {
+    font-size: 32px;
+    color: #b8241c;
+    float: left;
+    line-height: 1;
+  }
+
+  .kontak .info p {
+    padding: 0 0 10px 42px;
+    line-height: 28px;
+    font-size: 14px;
+  }
+
+  .kontak .form-style .form-group {
+    margin-bottom: 20px;
+  }
+
+  .kontak .form-style input,
+  .kontak .form-style textarea {
+    border-radius: 5px;
+    box-shadow: none;
+    font-size: 14px;
+    padding: 10px 15px;
+  }
+
+  .kontak .form-style input:focus,
+  .kontak .form-style textarea:focus {
+    border-color: #b8241c;
+  }
+
+  .kontak .form-style button[type=submit] {
+    background: #b8241c;
+    border: 0;
+    padding: 10px 24px;
+    color: #fff;
+    transition: 0.4s;
+    border-radius: 50px;
+  }
+
+  .kontak .form-style button[type=submit]:hover {
+    background: #e2e2e2;
+    color:#b8241c;
+  }
+
+  .projectku .projectku-box {
+    background-color: #b8241c;
+    box-shadow: #777777;
+    padding-top: 7pt;
+    padding-bottom: 5pt;
+    margin-top: 15pt;
+    margin-bottom: 15pt;
+    border-radius: 8px;
+  }
+
+  .projectku .projectku-box .a {
+    color: #e2e2e2;
+  }
+
+
+  /*--------------------------------------------------------------
+  # Footer
+  --------------------------------------------------------------*/
+  #footer {
+    background: #fff;
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+    padding: 30px 0;
+    color: #222222;
+    font-size: 14px;
+  }
+
+  #footer .credits {
+    font-size: 13px;
+    padding-top: 5px;
+    color: #222222;
+  }
+
+  #footer .footer-links a {
+    color: #222222;
+    padding-left: 15px;
+  }
+
+  #footer .footer-links a:first-child {
+    padding-left: 0;
+  }
+
+  #footer .footer-links a:hover {
+    color: #b8241c;
+  }

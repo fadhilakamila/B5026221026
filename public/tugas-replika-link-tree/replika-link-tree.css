@@ -1,0 +1,148 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #d9e7f0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    font-family: 'Cascadia Code', sans-serif;                                      
+}
+
+header {
+    width: 95%;
+    max-width: 788px;
+    display: flex;
+    justify-content: flex-end;
+    padding: 12px;
+    margin-top: 15px;
+}
+
+.lala-share-button {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background-color:  rgb(230, 226, 226);
+    border-style: solid;
+    border-color: rgb(212, 208, 208);
+    border-width: 1px;
+}
+
+.lala-share-button svg {
+    margin-left: 12px;
+    margin-top: 12px;
+}
+
+.lala-share-button:hover {
+    background-color: #c4c9cc;
+    opacity: 0.5;
+    transition: cubic-bezier(.07, 1.41, .82, 1.41);
+}
+
+.lala-container {
+    width: 91%;
+    max-width: 680px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 20px;
+    margin-bottom: 0px;
+}
+
+h2 {
+    font-size: 14px;
+    margin-bottom: 0px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+h3 {
+    font-size: 12px;
+    margin-bottom: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.lala-tile {
+    width: 100%;
+    /* height: 56px; */
+    background-color: #d9e7f0;
+    margin: 7px;
+    border-radius: 50px;
+    border-style: solid;
+    border-color: rgb(162, 159, 159);
+    border-width: 1px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.lala-tile:hover {
+    transition: cubic-bezier(.07, 1.41, .82, 1.41) 0.2s;
+    transform: scale(1.02);
+}
+
+.lala-tile-share-button {
+    margin: 8px;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #d9e7f0;
+}
+
+.lala-tile-share-button svg {
+    margin-left: 12px;
+    margin-top: 12px;
+}
+
+.lala-image-container {
+    height: 96px;
+    width: 96px;
+    border-radius: 48px;
+    overflow: hidden;
+}
+
+.lala-image-container img {
+    height: 100%;
+}
+
+.lala-icon {
+    margin:4px 8px;
+    width: 44px;
+    height: 44px;
+    border-radius: 22px;
+    overflow: hidden;
+}
+
+footer {
+    margin-top: 16px;
+    margin-bottom: 70px;
+}
+
+footer svg {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 20px;
+    width: auto;
+}
+
+.lala-social-icon {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.lala-social-icon:hover {
+    transition: cubic-bezier(.07, 1.41, .82, 1.41) 0.2s;
+    transform: scale(1.06);
+}
