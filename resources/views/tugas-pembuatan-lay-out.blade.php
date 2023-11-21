@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="tugas-pembuatan-lay-out/pembuatan-lay-out.css"/>
+    <link rel="stylesheet" href="pembuatan-lay-out.css"/>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
 
@@ -18,9 +18,15 @@
 
 </head>
 <body>
-
     <div class="container">
-        <div class="team-info">
+        <div class="row">
+            <div class="col-11"></div>
+            <div class="col-1">
+                <img src="tugas-pembuatan-lay-out/img-tugas-pembuatan-lay-out/Dark.png" width="100px">
+            </div>
+        </div>
+
+        <div class="row">
             <div class="col-6">
                 <h2><b>Meet the Team</b></h2>
                 <p class="text-muted small">A description about your team goes here. Talk about your values, mission, and anything else you think would be helpful or relevant for investors to know. A description about your team goes here.</p>

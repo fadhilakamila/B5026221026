@@ -14,8 +14,10 @@
     <p>
     Nama    : {{ $nama }} <br>
     Alamat  : {{ $alamat }}<br>
-    Umur    : {{ $umur }} 
+    Umur    : {{ $umur }}
     </p>
 
+    <!-- Button ini adalah trigger -->
+    <a href="showjam/{{ date('G:i:s')}}">Klik di sini</a> <!-- ini adalah jam server, bukan jam client -->
 </body>
 </html>
