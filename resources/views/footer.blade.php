@@ -1,3 +1,3 @@
 <footer>
-    <center>Hak Cipta oleh Lala</center>
+    ©2023 <strong>Fadhila Kamila Ismail</strong>
 </footer>

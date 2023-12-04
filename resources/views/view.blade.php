@@ -4,7 +4,7 @@
 
 @section('konten')
 
-    <h3>Tambah Pegawai Baru</h3>
+	<h3>Data Pegawai</h3>
 
     <div class="container">
         <div class="row mt-5">
@@ -12,34 +12,36 @@
                 <div class="kotak-kosong mt-0 ml-0"></div>
             </div>
             <div class="col-8">
-                <form action="/pegawai/store" method="post">
+                @foreach($pegawai as $p)
+                <form action="/pegawai/view" method="post">
                     {{ csrf_field() }}
+                    <input type="hidden" name="id" value="{{ $p->pegawai_id }}">
                     <div class="row mb-3">
                         <label for="pegawai_nama" class="col-sm-2 col-form-label">Nama</label>
                         <div class="col-sm-10">
-                            <input type="text" id="nama" name="nama" class="form-control">
+                            <input type="text" id="nama" name="nama" value="{{ $p->pegawai_nama }}" class="form-control">
                         </div>
                     </div>
                     <div class="row mb-3">
                         <label for="pegawai_jabatan" class="col-sm-2 col-form-label">Jabatan</label>
                         <div class="col-sm-10">
-                        <input type="text" id="jabatan" name="jabatan" class="form-control">
+                        <input type="text" id="jabatan" name="jabatan" value="{{ $p->pegawai_jabatan }}" class="form-control">
                         </div>
                     </div>
                     <div class="row mb-3">
                         <label for="pegawai_umur" class="col-sm-2 col-form-label">Umur</label>
                         <div class="col-sm-10">
-                            <input type="number" id="umur" name="umur" class="form-control" >
+                            <input type="number" id="umur" name="umur" value="{{ $p->pegawai_umur }}" class="form-control" >
                         </div>
                     </div>
                     <div class="row mb-3">
                         <label for="pegawai_alamat" class="col-sm-2 col-form-label">Alamat</label>
                         <div class="col-sm-10">
-                            <input type="text" id="alamat" name="alamat" class="form-control" >
+                            <input type="text" id="alamat" name="alamat" value="{{ $p->pegawai_alamat }}" class="form-control" >
                         </div>
                     </div>
-                    <button href="/pegawai/store" type="submit" class="btn btn-primary">OK</button>
                 </form>
+                @endforeach
             </div>
         </div>
     </div>
