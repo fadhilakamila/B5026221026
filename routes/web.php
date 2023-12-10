@@ -99,3 +99,23 @@ Route::get('/pegawai/hapus/{id}','App\Http\Controllers\PegawaiController@hapus')
 Route::get('/pegawai/cari','App\Http\Controllers\PegawaiController@cari');
 // Read record tertentu
 Route::get('/pegawai/view/{id}','App\Http\Controllers\PegawaiController@view'); // "{}" berisi Primary Key
+
+
+// === Latihan Soal D4 ===
+Route::get('/keranjangbelanja','App\Http\Controllers\KeranjangBelanjaController@index');
+Route::get('/keranjangbelanja/beli','App\Http\Controllers\KeranjangBelanjaController@add');
+Route::post('/keranjangbelanja/store','App\Http\Controllers\KeranjangBelanjaController@store');
+Route::get('/keranjangbelanja/hapus/{id}','App\Http\Controllers\KeranjangBelanjaController@hapus');
+
+
+// === Tugas Pra EAS ===
+Route::get('/masker','App\Http\Controllers\MaskerController@index');
+Route::get('/masker/add','App\Http\Controllers\MaskerController@add');
+Route::post('/masker/store','App\Http\Controllers\MaskerController@store');
+Route::get('/masker/edit/{id}','App\Http\Controllers\MaskerController@edit');
+Route::post('/masker/update','App\Http\Controllers\MaskerController@update');
+Route::get('/masker/delete/{id}','App\Http\Controllers\MaskerController@delete');
+Route::get('/masker/view/{id}','App\Http\Controllers\MaskerController@view');
+Route::get('/masker/cari','App\Http\Controllers\MaskerController@cari');
+
+// === Latihan Soal D5 ===
