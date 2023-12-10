@@ -119,3 +119,6 @@ Route::get('/masker/view/{id}','App\Http\Controllers\MaskerController@view');
 Route::get('/masker/cari','App\Http\Controllers\MaskerController@cari');
 
 // === Latihan Soal D5 ===
+Route::get('/nilaikuliah','App\Http\Controllers\NilaiKuliahController@index');
+Route::get('/nilaikuliah/add','App\Http\Controllers\NilaiKuliahController@add');
+Route::post('/nilaikuliah/store','App\Http\Controllers\NilaiKuliahController@store');
