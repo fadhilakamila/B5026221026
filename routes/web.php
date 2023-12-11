@@ -107,7 +107,6 @@ Route::get('/keranjangbelanja/beli','App\Http\Controllers\KeranjangBelanjaContro
 Route::post('/keranjangbelanja/store','App\Http\Controllers\KeranjangBelanjaController@store');
 Route::get('/keranjangbelanja/hapus/{id}','App\Http\Controllers\KeranjangBelanjaController@hapus');
 
-
 // === Tugas Pra EAS ===
 Route::get('/masker','App\Http\Controllers\MaskerController@index');
 Route::get('/masker/add','App\Http\Controllers\MaskerController@add');
@@ -122,3 +121,17 @@ Route::get('/masker/cari','App\Http\Controllers\MaskerController@cari');
 Route::get('/nilaikuliah','App\Http\Controllers\NilaiKuliahController@index');
 Route::get('/nilaikuliah/add','App\Http\Controllers\NilaiKuliahController@add');
 Route::post('/nilaikuliah/store','App\Http\Controllers\NilaiKuliahController@store');
+
+Route::get('/counter','App\Http\Controllers\CounterController@showCounter');
+
+// === Latihan Soal Y1 ===
+// Route::get('/karyawan','App\Http\Controllers\KaryawanController@index');
+Route::get('/karyawan/edit/{id}','App\Http\Controllers\KaryawanController@edit');
+Route::post('/karyawan/update','App\Http\Controllers\KaryawanController@update');
+Route::get('/karyawan/view/{id}','App\Http\Controllers\KaryawanController@view');
+
+// === EAS ===
+Route::get('/karyawan','App\Http\Controllers\KaryawanController@index');
+Route::get('/karyawan/add','App\Http\Controllers\KaryawanController@add');
+Route::post('/karyawan/store','App\Http\Controllers\KaryawanController@store');
+Route::get('/karyawan/delete/{id}','App\Http\Controllers\KaryawanController@delete');

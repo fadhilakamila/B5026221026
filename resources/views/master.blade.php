@@ -19,19 +19,16 @@
 
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
         <!-- Brand -->
-        <a class="navbar-brand" href="/pegawai">Fadhila Kamila Ismail - 5026221026</a>
+        <a class="navbar-brand" href="">Fadhila Kamila Ismail - 5026221026</a>
 
         <!-- Links -->
-        {{-- <ul class="navbar-nav">
+        <ul class="navbar-nav">
             <li class="nav-item">
-                <a class="nav-link" href="#">Link 1</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Link 2</a>
+                <a class="nav-link" href="/karyawan">Karyawan</a>
             </li>
 
             <!-- Dropdown -->
-            <li class="nav-item dropdown">
+            {{-- <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
                     Dropdown link
                 </a>
@@ -40,8 +37,8 @@
                     <a class="dropdown-item" href="#">Link 2</a>
                     <a class="dropdown-item" href="#">Link 3</a>
                 </div>
-            </li>
-        </ul> --}}
+            </li> --}}
+        </ul>
     </nav>
     <br>
 
